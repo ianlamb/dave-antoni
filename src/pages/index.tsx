@@ -65,13 +65,13 @@ const IndexPage: React.FC<PageProps> = () => {
           <div className="">
             <h3 className="text-3xl mb-2">Ceremony</h3>
             <p className="text-lg">
-              The ceremony will happen at a time and place (TBD).
+              The ceremony will begin at 3:30pm EST in [location]. Please see venue map below.
             </p>
           </div>
           <div className="">
             <h3 className="text-3xl mb-2">Reception</h3>
             <p className="text-lg">
-              The reception will happen at a time and place (TBD).
+              The reception will begin at [time] EST in [location]. Please see venue map below.
             </p>
           </div>
         </div>
