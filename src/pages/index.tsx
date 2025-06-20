@@ -12,14 +12,14 @@ const pageStyles = {
 
 const IndexPage: React.FC<PageProps> = () => {
   const { pagesYaml: pageData } = useStaticQuery(graphql`
-        query getPageData {
-            pagesYaml(name: { eq: "home" }) {
-                name
-                title
-                intro
-            }
-        }
-    `)
+    query getPageData {
+      pagesYaml(name: { eq: "home" }) {
+        name
+        title
+        intro
+      }
+    }
+  `)
 
   return (
     <main style={pageStyles}>
@@ -29,16 +29,34 @@ const IndexPage: React.FC<PageProps> = () => {
             {pageData.title}
           </h1>
           <p className="text-xl">
-          <Markdown>{pageData.intro}</Markdown>
+            <Markdown>{pageData.intro}</Markdown>
           </p>
         </div>
-        <StaticImage
+        {/* <StaticImage
           src="../images/headshots_2.jpg"
           alt="Headshots"
           placeholder="blurred"
           className="w-full max-h-[100vh] lg:float-right lg:w-[50%]"
-        />
+        /> */}
         <div className="clear-both"></div>
+      </Section>
+      <Section>
+        <form name="contact" netlify>
+          ﻿ <h2>Contact</h2>
+          <p>
+            <label>
+              Name <input type="text" name="name" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Email <input type="email" name="email" />
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
       </Section>
     </main>
   )
