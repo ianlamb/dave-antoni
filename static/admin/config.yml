@@ -15,7 +15,7 @@ collections:
             file: content/pages/home.yml
             fields:
                 - { label: 'Title', name: title, widget: string }
-                - { label: 'Intro', name: intro, widget: string }
+                - { label: 'Intro', name: intro, widget: markdown }
                 - name: testimonials
                   label: 'Testimonials'
                   widget: list

@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Markdown from 'react-markdown'
 import Obfuscate from 'react-obfuscate'
 import type { HeadFC, PageProps } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
@@ -28,7 +29,7 @@ const IndexPage: React.FC<PageProps> = () => {
             {pageData.title}
           </h1>
           <p className="text-xl">
-            {pageData.intro}
+          <Markdown>{pageData.intro}</Markdown>
           </p>
         </div>
         <StaticImage
