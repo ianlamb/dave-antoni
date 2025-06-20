@@ -1,13 +1,14 @@
 @tailwind base;
 @layer base {
   html {
-    @apply text-plum;
+    @apply text-slate-100;
+    @apply bg-slate-800;
   }
 }
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
 
 @font-face {
   font-family: 'Baroque Script';
@@ -16,10 +17,10 @@
   font-style: normal;
   font-named-instance: 'Regular';
   src: url(/fonts/BaroqueScript.ttf) format("truetype");
-}
+} */
 
 a {
-  @apply text-steel;
+  @apply text-sky-500;
 }
 
 a:hover {

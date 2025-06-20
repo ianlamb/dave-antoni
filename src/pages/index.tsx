@@ -15,20 +15,20 @@ const IndexPage: React.FC<PageProps> = () => {
             pagesYaml(name: { eq: "home" }) {
                 name
                 title
-                bio
+                intro
             }
         }
     `)
 
   return (
     <main style={pageStyles}>
-      <Section className="flex items-center text-center text-gold px-8">
+      <Section className="flex items-center text-center px-8">
         <div className="mb-24 lg:mb-0 lg:float-left">
-          <h1 className="text-3xl lg:text-4xl font-fancy leading-[2] my-24 lg:my-36">
+          <h1 className="text-3xl lg:text-4xl leading-[2] my-24 lg:my-36">
             {pageData.title}
           </h1>
           <p className="text-xl">
-            {pageData.bio}
+            {pageData.intro}
           </p>
         </div>
         <StaticImage
