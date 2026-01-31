@@ -61,7 +61,7 @@ const IndexPage: React.FC<PageProps> = () => {
       </Section>
       <Section>
         <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
-          ﻿ <h2>Contact</h2>
+          <h2>Contact</h2>
           <p>
             <label>
               Name <input type="text" name="name" />
