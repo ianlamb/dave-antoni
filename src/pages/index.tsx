@@ -41,7 +41,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <div className="clear-both"></div>
       </Section>
       <Section>
-        <form name="contact" data-netlify="true">
+        <form name="contact" method="POST" data-netlify="true">
           ﻿ <h2>Contact</h2>
           <p>
             <label>
