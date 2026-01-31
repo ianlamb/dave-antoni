@@ -29,9 +29,14 @@ const IndexPage: React.FC<PageProps> = () => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: formData
+      body: new URLSearchParams(formData as unknown as URLSearchParams).toString()
     })
-      .then(() => console.log("Form successfully submitted"))
+      .then((result) => {
+        if (!result.ok) {
+          throw new Error(result.statusText)
+        }
+      })
+      .then((result) => console.log("Form successfully submitted", result))
       .catch(error => alert(error));
   };
 
