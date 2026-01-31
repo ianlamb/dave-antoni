@@ -32,16 +32,16 @@ const IndexPage: React.FC<PageProps> = () => {
             <Markdown>{pageData.intro}</Markdown>
           </p>
         </div>
-        {/* <StaticImage
-          src="../images/headshots_2.jpg"
-          alt="Headshots"
+        <StaticImage
+          src="../../static/images/dave2.jpg"
+          alt="Dave2"
           placeholder="blurred"
           className="w-full max-h-[100vh] lg:float-right lg:w-[50%]"
-        /> */}
+        />
         <div className="clear-both"></div>
       </Section>
       <Section>
-        <form name="contact" netlify>
+        <form name="contact" data-netlify="true">
           ﻿ <h2>Contact</h2>
           <p>
             <label>
