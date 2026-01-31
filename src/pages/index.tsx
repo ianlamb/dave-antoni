@@ -21,6 +21,20 @@ const IndexPage: React.FC<PageProps> = () => {
     }
   `)
 
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.currentTarget);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: formData
+    })
+      .then(() => console.log("Form successfully submitted"))
+      .catch(error => alert(error));
+  };
+
   return (
     <main style={pageStyles}>
       <Section className="flex items-center text-center px-8">
@@ -41,7 +55,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <div className="clear-both"></div>
       </Section>
       <Section>
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
           ﻿ <h2>Contact</h2>
           <p>
             <label>
