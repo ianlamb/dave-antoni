@@ -70,6 +70,7 @@ const IndexPage: React.FC<PageProps> = () => {
           <p>
             <button type="submit">Send</button>
           </p>
+          <input type="hidden" name="form-name" value="contact" />
         </form>
       </Section>
     </main>
