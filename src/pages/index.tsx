@@ -1,10 +1,10 @@
 import * as React from 'react'
 import Markdown from 'react-markdown'
-import Obfuscate from 'react-obfuscate'
 import type { HeadFC, PageProps } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import { graphql, useStaticQuery } from 'gatsby'
 import { Section } from '../components/Section'
+import { ContactForm } from '../components/ContactForm'
 
 const pageStyles = {
   fontFamily: '-apple-system, Roboto, sans-serif, serif',
@@ -20,25 +20,6 @@ const IndexPage: React.FC<PageProps> = () => {
       }
     }
   `)
-
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-
-    const formData = new FormData(event.currentTarget);
-
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData as unknown as URLSearchParams).toString()
-    })
-      .then((result) => {
-        if (!result.ok) {
-          throw new Error(result.statusText)
-        }
-      })
-      .then((result) => console.log("Form successfully submitted", result))
-      .catch(error => alert(error));
-  };
 
   return (
     <main style={pageStyles}>
@@ -60,23 +41,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <div className="clear-both"></div>
       </Section>
       <Section>
-        <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
-          <input type="hidden" name="form-name" value="contact" />
-          <h2>Contact</h2>
-          <p>
-            <label>
-              Name <input type="text" name="name" />
-            </label>
-          </p>
-          <p>
-            <label>
-              Email <input type="email" name="email" />
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
+        <ContactForm />
       </Section>
     </main>
   )
