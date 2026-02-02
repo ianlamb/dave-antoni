@@ -1,5 +1,4 @@
 import React from 'react'
-import ReCAPTCHA from 'react-google-recaptcha'
 
 export const ContactForm = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -71,11 +70,6 @@ export const ContactForm = () => {
               </label>
             </p>
           </fieldset>
-          <ReCAPTCHA
-            sitekey="6Lc1pF0sAAAAABsyFt5Z0aZGumC8hq2zRsQiJXpQ"
-            theme="dark"
-            onChange={(wat) => console.log('wat', wat)}
-          />
           <button type="submit">Submit</button>
         </form>
       </article>
