@@ -2874,6 +2874,11 @@ acorn@^8.0.0, acorn@^8.11.0, acorn@^8.14.0, acorn@^8.15.0, acorn@^8.8.2:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.15.0.tgz#a360898bc415edaac46c8241f6383975b930b816"
   integrity sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==
 
+add@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/add/-/add-2.0.6.tgz#248f0a9f6e5a528ef2295dbeec30532130ae2235"
+  integrity sha512-j5QzrmsokwWWp6kUcJQySpbG+xfOBqqKnup3OIk1pz+kB/80SLorZ9V8zHFLO92Lcd+hbvq8bT+zOGoPkmBV0Q==
+
 address@1.2.2, address@^1.0.1, address@^1.1.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/address/-/address-1.2.2.tgz#2b5248dac5485a6390532c6a517fda2e3faac89e"
@@ -3480,6 +3485,14 @@ babel-preset-gatsby@^3.16.0:
     babel-plugin-transform-react-remove-prop-types "^0.4.24"
     gatsby-core-utils "^4.16.0"
     gatsby-legacy-polyfills "^3.16.0"
+
+babel-runtime@^6.26.0:
+  version "6.26.0"
+  resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
+  integrity sha512-ITKNuq2wKlW1fJg9sSW52eepoYgZBggvOAHC0u/CYu/qxQ9EVzThCgR69BnSXLHjy2f7SY5zaQ4yt7H9ZVxY2g==
+  dependencies:
+    core-js "^2.4.0"
+    regenerator-runtime "^0.11.0"
 
 bail@^1.0.0:
   version "1.0.5"
@@ -4332,6 +4345,11 @@ core-js-pure@^3.23.3:
   version "3.48.0"
   resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.48.0.tgz#7d5a3fe1ec3631b9aa76a81c843ac2ce918e5023"
   integrity sha512-1slJgk89tWC51HQ1AEqG+s2VuwpTRr8ocu4n20QUcH1v9lAN0RXen0Q0AABa/DK1I7RrNWLucplOHMx8hfTGTw==
+
+core-js@^2.4.0:
+  version "2.6.12"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
+  integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
 
 core-js@^3.31.0:
   version "3.48.0"
@@ -6288,6 +6306,13 @@ gatsby-plugin-react-svg@^3.3.0:
   integrity sha512-kFPElMFu1QCkiFCm1pSrVkOHAeafU6wkD0qCVPs7nL/Txh5KFh0aOO6Feiwvfre1Jo+Eg3lwCuGmgsy9L+4pDg==
   dependencies:
     svg-react-loader "^0.4.6"
+
+gatsby-plugin-recaptcha@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-recaptcha/-/gatsby-plugin-recaptcha-1.0.5.tgz#d3ab783957d6549cfa157b230714136c58ab5319"
+  integrity sha512-qPAuixqmVVHDhag8lUUpOxQY/R9MVDH9PmLlGWvUQNDeNQOXtJe1r5TAzl0QAGg4x8lR2UZre03nnKizHuDbrA==
+  dependencies:
+    babel-runtime "^6.26.0"
 
 gatsby-plugin-sharp@^5.11.0:
   version "5.16.0"
@@ -11186,7 +11211,7 @@ prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.0.0, prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.7, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
+prop-types@^15.0.0, prop-types@^15.5.0, prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.7, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -11370,6 +11395,14 @@ react-aria-menubutton@^7.0.0:
     prop-types "^15.6.0"
     teeny-tap "^0.2.0"
 
+react-async-script@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-async-script/-/react-async-script-1.2.0.tgz#ab9412a26f0b83f5e2e00de1d2befc9400834b21"
+  integrity sha512-bCpkbm9JiAuMGhkqoAiC0lLkb40DJ0HOEJIku+9JDjxX3Rcs+ztEOG13wbrOskt3n2DTrjshhaQ/iay+SnGg5Q==
+  dependencies:
+    hoist-non-react-statics "^3.3.0"
+    prop-types "^15.5.0"
+
 react-codemirror2@^7.0.0:
   version "7.3.0"
   resolved "https://registry.yarnpkg.com/react-codemirror2/-/react-codemirror2-7.3.0.tgz#c26e9fe655458389c6218496076e4bc7a4c31166"
@@ -11470,6 +11503,14 @@ react-frame-component@^5.2.1:
   version "5.2.7"
   resolved "https://registry.yarnpkg.com/react-frame-component/-/react-frame-component-5.2.7.tgz#e31c0943be95fdf667c59d6d7fcf18c1dda4d4b2"
   integrity sha512-ROjHtSLoSVYUBfTieazj/nL8jIX9rZFmHC0yXEU+dx6Y82OcBEGgU9o7VyHMrBFUN9FuQ849MtIPNNLsb4krbg==
+
+react-google-recaptcha@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/react-google-recaptcha/-/react-google-recaptcha-3.1.0.tgz#44aaab834495d922b9d93d7d7a7fb2326315b4ab"
+  integrity sha512-cYW2/DWas8nEKZGD7SCu9BSuVz8iOcOLHChHyi7upUuVhkpkhYG/6N3KDiTQ3XAiZ2UAZkfvYKMfAHOzBOcGEg==
+  dependencies:
+    prop-types "^15.5.0"
+    react-async-script "^1.2.0"
 
 react-hot-loader@^4.8.0:
   version "4.13.1"
@@ -11877,6 +11918,11 @@ regenerate@^1.4.2:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/regenerate/-/regenerate-1.4.2.tgz#b9346d8827e8f5a32f7ba29637d398b69014848a"
   integrity sha512-zrceR/XhGYU/d/opr2EKO7aRHUeiBI8qjtfHqADTwZd6Szfy16la6kqD0MIUs5z5hx6AaKa+PixpPrR289+I0A==
+
+regenerator-runtime@^0.11.0:
+  version "0.11.1"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
+  integrity sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==
 
 regenerator-runtime@^0.13.7:
   version "0.13.11"
@@ -14709,6 +14755,11 @@ yargs@^15.3.1, yargs@^15.4.1:
     which-module "^2.0.0"
     y18n "^4.0.0"
     yargs-parser "^18.1.2"
+
+yarn@^1.22.22:
+  version "1.22.22"
+  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.22.22.tgz#ac34549e6aa8e7ead463a7407e1c7390f61a6610"
+  integrity sha512-prL3kGtyG7o9Z9Sv8IPfBNrWTDmXB4Qbes8A9rEzt6wkJV8mUvoirjU0Mp3GGAU06Y0XQyA3/2/RQFVuK7MTfg==
 
 yocto-queue@^0.1.0:
   version "0.1.0"

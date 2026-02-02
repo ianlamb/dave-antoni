@@ -19,6 +19,7 @@
     "@mdx-js/react": "^2.3.0",
     "@netlify/functions": "^1.6.0",
     "@picocss/pico": "^2.1.1",
+    "add": "^2.0.6",
     "autoprefixer": "^10.4.14",
     "classnames": "^2.5.1",
     "gatsby": "^5.11.0",
@@ -28,6 +29,7 @@
     "gatsby-plugin-netlify-cms": "^7.11.0",
     "gatsby-plugin-postcss": "^6.11.0",
     "gatsby-plugin-react-svg": "^3.3.0",
+    "gatsby-plugin-recaptcha": "^1.0.5",
     "gatsby-plugin-sharp": "^5.11.0",
     "gatsby-source-filesystem": "^5.11.0",
     "gatsby-transformer-remark": "^6.14.0",
@@ -37,8 +39,10 @@
     "postcss": "^8.4.27",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-google-recaptcha": "^3.1.0",
     "react-markdown": "^10.1.0",
-    "react-obfuscate": "^3.6.9"
+    "react-obfuscate": "^3.6.9",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@types/node": "^20.3.3",

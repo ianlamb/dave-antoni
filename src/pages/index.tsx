@@ -26,9 +26,9 @@ const IndexPage: React.FC<PageProps> = () => {
     <Layout>
       <Section>
         <h1>{pageData.title}</h1>
-        <p>
+        <div>
           <Markdown>{pageData.intro}</Markdown>
-        </p>
+        </div>
         <StaticImage
           src="../../static/images/dave2.jpg"
           alt="Dave2"

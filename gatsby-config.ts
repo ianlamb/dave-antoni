@@ -10,7 +10,10 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
+    // netlify
     'gatsby-plugin-netlify-cms',
+
+    // css/image/file loading
     'gatsby-plugin-postcss',
     {
       resolve: 'gatsby-plugin-google-gtag',
@@ -22,14 +25,6 @@ const config: GatsbyConfig = {
     'gatsby-plugin-mdx',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
-    // {
-    //   resolve: 'gatsby-source-filesystem',
-    //   options: {
-    //     name: 'images',
-    //     path: './src/images/',
-    //   },
-    //   __key: 'images',
-    // },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -50,6 +45,7 @@ const config: GatsbyConfig = {
     'gatsby-transformer-remark',
     'gatsby-transformer-yaml',
 
+    // svg loader
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
@@ -58,6 +54,9 @@ const config: GatsbyConfig = {
         },
       },
     },
+
+    // recaptcha
+    'gatsby-plugin-recaptcha',
   ],
 }
 
