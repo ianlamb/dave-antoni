@@ -5,6 +5,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import { graphql, useStaticQuery } from 'gatsby'
 import { Section } from '../components/Section'
 import { ContactForm } from '../components/ContactForm'
+import { Layout } from '../components/Layout'
 
 const pageStyles = {
   fontFamily: '-apple-system, Roboto, sans-serif, serif',
@@ -22,16 +23,12 @@ const IndexPage: React.FC<PageProps> = () => {
   `)
 
   return (
-    <main style={pageStyles}>
-      <Section className="flex items-center text-center px-8">
-        <div className="mb-24 lg:mb-0 lg:float-left">
-          <h1 className="text-3xl lg:text-4xl leading-[2] my-24 lg:my-36">
-            {pageData.title}
-          </h1>
-          <p className="text-xl">
-            <Markdown>{pageData.intro}</Markdown>
-          </p>
-        </div>
+    <Layout>
+      <Section>
+        <h1>{pageData.title}</h1>
+        <p>
+          <Markdown>{pageData.intro}</Markdown>
+        </p>
         <StaticImage
           src="../../static/images/dave2.jpg"
           alt="Dave2"
@@ -40,10 +37,13 @@ const IndexPage: React.FC<PageProps> = () => {
         />
         <div className="clear-both"></div>
       </Section>
+      <Section alternateBackground>
+        <article>Test</article>
+      </Section>
       <Section>
         <ContactForm />
       </Section>
-    </main>
+    </Layout>
   )
 }
 

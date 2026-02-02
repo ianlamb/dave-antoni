@@ -1,10 +1,12 @@
 import React from 'react'
+import classnames from 'classnames'
 
-export const Section: React.FC<{ className?: string; children?: JSX.Element | Array<JSX.Element> }> = ({
-  className = '',
-  children,
-}) => (
-  <div className={`${className} w-full`}>
-    <div className="p-0 mx-auto max-w-[1200px]">{children}</div>
-  </div>
+export const Section: React.FC<{
+  alternateBackground?: boolean
+} & React.PropsWithChildren> = ({ alternateBackground, children }) => (
+  <section
+    className={classnames({ 'pico-background-azure-850': alternateBackground })}
+  >
+    <div className="container" style={{ padding: '2rem 0 1rem' }}>{children}</div>
+  </section>
 )
