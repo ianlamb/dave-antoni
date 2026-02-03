@@ -26,7 +26,7 @@ export const ContactForm = () => {
     <div style={{ display: 'flex', justifyContent: 'center' }}>
       <article style={{ width: '640px' }}>
         <form
-          name="contact"
+          name="contact-2"
           method="POST"
           netlify-honeypot="bot-field"
           data-netlify-recaptcha="true"
