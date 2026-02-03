@@ -36,6 +36,7 @@ export const ContactForm = () => {
         >
           <input type="hidden" name="form-name" value={FORM_NAME} />
           <h2>Get in touch!</h2>
+          <p>Leave me a message if you're interested in classes or want to reach out for any reason, I'll reply by email as soon as I can.</p>
           <fieldset>
             <p style={{ display: 'none' }}>
               <label>

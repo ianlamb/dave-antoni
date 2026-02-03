@@ -1,15 +1,12 @@
 import * as React from 'react'
-import Markdown from 'react-markdown'
 import type { HeadFC, PageProps } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
 import { graphql, useStaticQuery } from 'gatsby'
 import { Section } from '../components/Section'
 import { ContactForm } from '../components/ContactForm'
 import { Layout } from '../components/Layout'
-
-const pageStyles = {
-  fontFamily: '-apple-system, Roboto, sans-serif, serif',
-}
+import { About } from '../components/About'
+import { Samples } from '../components/Samples'
+import { Intro } from '../components/Intro'
 
 const IndexPage: React.FC<PageProps> = () => {
   const { pagesYaml: pageData } = useStaticQuery(graphql`
@@ -18,6 +15,7 @@ const IndexPage: React.FC<PageProps> = () => {
         name
         title
         intro
+        about
       }
     }
   `)
@@ -25,20 +23,13 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <Section>
-        <h1>{pageData.title}</h1>
-        <div>
-          <Markdown>{pageData.intro}</Markdown>
-        </div>
-        <StaticImage
-          src="../../static/images/dave2.jpg"
-          alt="Dave2"
-          placeholder="blurred"
-          className="w-full max-h-[100vh] lg:float-right lg:w-[50%]"
-        />
-        <div className="clear-both"></div>
+        <Intro title={pageData.title} intro={pageData.intro} />
       </Section>
       <Section alternateBackground>
-        <article>Test</article>
+        <About content={pageData.about} />
+      </Section>
+      <Section>
+        <Samples />
       </Section>
       <Section>
         <ContactForm />
