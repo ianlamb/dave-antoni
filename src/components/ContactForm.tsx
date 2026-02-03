@@ -31,7 +31,6 @@ export const ContactForm = () => {
           name={FORM_NAME}
           method="POST"
           netlify-honeypot="bot-field"
-          data-netlify-recaptcha="true"
           data-netlify="true"
           onSubmit={handleSubmit}
         >
