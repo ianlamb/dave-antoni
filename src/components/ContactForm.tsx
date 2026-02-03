@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FORM_NAME = 'contact-2';
+const FORM_NAME = 'contact';
 
 export const ContactForm = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
