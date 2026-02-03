@@ -1,5 +1,7 @@
 import React from 'react'
 
+const FORM_NAME = 'contact-2';
+
 export const ContactForm = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -26,14 +28,14 @@ export const ContactForm = () => {
     <div style={{ display: 'flex', justifyContent: 'center' }}>
       <article style={{ width: '640px' }}>
         <form
-          name="contact-2"
+          name={FORM_NAME}
           method="POST"
           netlify-honeypot="bot-field"
           data-netlify-recaptcha="true"
           data-netlify="true"
           onSubmit={handleSubmit}
         >
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="form-name" value={FORM_NAME} />
           <h2>Get in touch!</h2>
           <fieldset>
             <p style={{ display: 'none' }}>
