@@ -25,13 +25,13 @@ const IndexPage: React.FC<PageProps> = () => {
       <Section>
         <Intro title={pageData.title} intro={pageData.intro} />
       </Section>
-      <Section alternateBackground>
+      <Section className="pico-background-purple-750">
         <About content={pageData.about} />
       </Section>
       <Section>
         <Samples />
       </Section>
-      <Section>
+      <Section className="pico-background-azure-750">
         <ContactForm />
       </Section>
     </Layout>
