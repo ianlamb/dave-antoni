@@ -22,7 +22,7 @@ export const Intro: React.FC<{
           placeholder="blurred"
         />
       </div>
-      <div className="grid" style={{ marginTop: '3rem', marginBottom: '1rem' }}>
+      <div className="instruments">
         {instruments.map(({ title, icon }) => (
           <Icon title={title} name={icon as IconProps['name']} />
         ))}
