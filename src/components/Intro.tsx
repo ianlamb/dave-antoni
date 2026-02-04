@@ -14,7 +14,7 @@ export const Intro: React.FC<{ title: string; intro: string }> = ({
           <Markdown>{intro}</Markdown>
         </div>
         <StaticImage
-          src="../../static/images/dave1.jpg"
+          src="../../static/images/dave1.png"
           alt="Dave2"
           placeholder="blurred"
           className="w-full max-h-[100vh] lg:float-right lg:w-[50%]"

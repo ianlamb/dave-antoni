@@ -7,7 +7,7 @@ export const About: React.FC<{ content: string }> = ({ content }) => {
     <article>
       <div className="grid">
         <StaticImage
-          src="../../static/images/dave2.jpg"
+          src="../../static/images/dave2.png"
           alt="Dave2"
           placeholder="blurred"
           style={{ transform: 'scaleX(-1)' }}
