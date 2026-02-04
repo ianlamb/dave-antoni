@@ -5,6 +5,7 @@ import Obfuscate from 'react-obfuscate'
 const FORM_NAME = 'contact'
 
 export const ContactForm = () => {
+  const [isLoading, setIsLoading] = React.useState(false)
   const [isComplete, setIsComplete] = React.useState(false)
   const [hasError, setHasError] = React.useState(false)
 
@@ -13,6 +14,7 @@ export const ContactForm = () => {
 
     const formData = new FormData(event.currentTarget)
 
+    setIsLoading(true)
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -21,6 +23,7 @@ export const ContactForm = () => {
       ).toString(),
     })
       .then((result) => {
+        setIsLoading(false)
         if (!result.ok) {
           throw new Error(result.statusText)
         }
@@ -110,7 +113,9 @@ export const ContactForm = () => {
                 </label>
               </p>
             </fieldset>
-            <button type="submit">Submit</button>
+            <button type="submit" aria-busy={isLoading}>
+              Submit
+            </button>
           </form>
         )}
       </article>
