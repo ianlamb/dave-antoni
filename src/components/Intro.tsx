@@ -2,10 +2,13 @@ import { StaticImage } from 'gatsby-plugin-image'
 import * as React from 'react'
 import Markdown from 'react-markdown'
 
-export const Intro: React.FC<{ title: string; intro: string }> = ({
-  title,
-  intro,
-}) => {
+import { Icon, IconProps } from './Icon'
+
+export const Intro: React.FC<{
+  title: string
+  intro: string
+  instruments: { title: string; icon: string }[]
+}> = ({ title, intro, instruments }) => {
   return (
     <div>
       <h1>{title}</h1>
@@ -15,10 +18,14 @@ export const Intro: React.FC<{ title: string; intro: string }> = ({
         </div>
         <StaticImage
           src="../../static/images/dave1.png"
-          alt="Dave2"
+          alt="Dave"
           placeholder="blurred"
-          className="w-full max-h-[100vh] lg:float-right lg:w-[50%]"
         />
+      </div>
+      <div className="grid" style={{ marginTop: '3rem', marginBottom: '1rem' }}>
+        {instruments.map(({ title, icon }) => (
+          <Icon title={title} name={icon as IconProps['name']} />
+        ))}
       </div>
     </div>
   )

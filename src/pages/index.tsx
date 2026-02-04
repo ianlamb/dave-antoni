@@ -15,6 +15,10 @@ const IndexPage: React.FC<PageProps> = () => {
         name
         title
         intro
+        instruments {
+          title
+          icon
+        }
         about
       }
     }
@@ -23,7 +27,11 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <Section>
-        <Intro title={pageData.title} intro={pageData.intro} />
+        <Intro
+          title={pageData.title}
+          intro={pageData.intro}
+          instruments={pageData.instruments}
+        />
       </Section>
       <Section className="bg-purple">
         <About content={pageData.about} />

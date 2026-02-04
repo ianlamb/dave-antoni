@@ -21,6 +21,21 @@ intro: |-
     wants and needs for the best possible learning experience, and
     nothing gives me more satisfaction than showing someone their
     ability and helping them cultivate it.”
+instruments:
+  - title: Guitar
+    icon: guitar
+  - title: Piano
+    icon: piano
+  - title: Bass
+    icon: mandolin
+  - title: Drums
+    icon: drum
+  - title: Ukelele
+    icon: sitar
+  - title: Writing
+    icon: music
+  - title: Production
+    icon: mixing-table
 about: |-
   ## About Dave
 
