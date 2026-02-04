@@ -19,6 +19,20 @@ blockquote p {
   background: var(--pico-color-azure-750);
 }
 
+.success-message,
+.error-message {
+  margin-bottom: 550px;
+  border-style: solid;
+  border-width: 0;
+  border-left-width: 12px;
+}
+.success-message {
+  border-color: var(--pico-color-jade-400);
+}
+.error-message {
+  border-color: var(--pico-color-red-500);
+}
+
 @media only screen and (prefers-color-scheme: light) {
   h1 {
     color: var(--pico-color-pink-600);
