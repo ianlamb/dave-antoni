@@ -4,7 +4,7 @@ backend:
 
 media_folder: /static/images
 public_folder: /static/images
-site_url: https://dave-antoni.netlify.app
+site_url: https://daveantonini.ca
 
 collections:
     - name: pages
