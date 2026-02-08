@@ -1,5 +1,6 @@
 :root {
   --icon-size: 48px;
+  --theme-icon-size: 32px;
 }
 
 html {
@@ -29,6 +30,22 @@ h2 {
 
 blockquote p {
   color: var(--pico-color-purple-200);
+}
+
+.flex {
+  display: flex;
+}
+.main-title {
+  flex: 1;
+}
+.theme-toggle button {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+.theme-toggle img {
+  width: var(--theme-icon-size);
+  height: var(--theme-icon-size);
 }
 
 .instruments {
@@ -98,7 +115,43 @@ blockquote p {
   .icon-img {
     filter: invert(1);
   }
+  .theme-toggle img {
+    filter: invert(1);
+  }
 }
 
 @media only screen and (max-width: 768px) {
+}
+
+[data-theme='light'] {
+  .icon-img {
+    filter: invert(0);
+  }
+  .theme-toggle img {
+    filter: invert(0);
+  }
+
+  h1 {
+    color: var(--pico-color-pink-600);
+  }
+  blockquote p {
+    color: var(--pico-color-purple-800);
+  }
+  .icon-title {
+    color: #000000;
+  }
+  .bg-purple {
+    background: var(--pico-color-purple-250);
+  }
+  .bg-blue {
+    background: var(--pico-color-azure-250);
+  }
+}
+[data-theme='dark'] {
+  .icon-img {
+    filter: invert(1);
+  }
+  .theme-toggle img {
+    filter: invert(1);
+  }
 }

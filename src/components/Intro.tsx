@@ -2,6 +2,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import * as React from 'react'
 import Markdown from 'react-markdown'
 
+import { ThemeToggleButton } from './ThemeToggleButton'
 import { Icon, IconProps } from './Icon'
 
 export const Intro: React.FC<{
@@ -11,7 +12,12 @@ export const Intro: React.FC<{
 }> = ({ title, intro, instruments }) => {
   return (
     <div>
-      <h1>{title}</h1>
+      <div className="flex">
+        <h1 className="main-title">{title}</h1>
+        <div className="theme-toggle">
+          <ThemeToggleButton />
+        </div>
+      </div>
       <div className="grid">
         <div>
           <Markdown>{intro}</Markdown>
