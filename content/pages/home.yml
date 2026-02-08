@@ -59,6 +59,14 @@ about: |-
   and both Metalworks and Fanshawe College for Audio production and
   engineering, earning a graduate degree in Music Industry Arts, and a
   postgraduate certificate in Audio Post-Production.
+samples:
+  title: Music Samples
+  items:
+    - description: ""
+      spotifySrc: https://open.spotify.com/embed/artist/51BvEs1LeuH6swKuAaGZ9W?utm_source=generator
+    - description: ""
+      spotifySrc: https://open.spotify.com/embed/artist/5qKquO0aTpbwwEaQCvvAQJ?utm_source=generator
+      
 contact:
   title: Get in touch!
   description: Leave me a message if you're interested in classes or want to reach out for another reason

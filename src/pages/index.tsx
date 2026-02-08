@@ -20,6 +20,13 @@ const IndexPage: React.FC<PageProps> = () => {
           icon
         }
         about
+        samples {
+          title
+          items {
+            description
+            spotifySrc
+          }
+        }
         contact {
           title
           description
@@ -41,13 +48,10 @@ const IndexPage: React.FC<PageProps> = () => {
         <About content={pageData.about} />
       </Section>
       <Section>
-        <Samples />
+        <Samples {...pageData.samples} />
       </Section>
       <Section className="bg-blue">
-        <ContactForm
-          title={pageData.contact.title}
-          description={pageData.contact.description}
-        />
+        <ContactForm {...pageData.contact.title} />
       </Section>
     </Layout>
   )
