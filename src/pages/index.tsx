@@ -51,7 +51,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <Samples {...pageData.samples} />
       </Section>
       <Section className="bg-blue">
-        <ContactForm {...pageData.contact.title} />
+        <ContactForm {...pageData.contact} />
       </Section>
     </Layout>
   )
