@@ -20,6 +20,10 @@ const IndexPage: React.FC<PageProps> = () => {
           icon
         }
         about
+        contact {
+          title
+          description
+        }
       }
     }
   `)
@@ -40,7 +44,10 @@ const IndexPage: React.FC<PageProps> = () => {
         <Samples />
       </Section>
       <Section className="bg-blue">
-        <ContactForm />
+        <ContactForm
+          title={pageData.contact.title}
+          description={pageData.contact.description}
+        />
       </Section>
     </Layout>
   )

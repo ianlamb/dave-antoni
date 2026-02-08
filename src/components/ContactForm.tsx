@@ -4,7 +4,13 @@ import Obfuscate from 'react-obfuscate'
 
 const FORM_NAME = 'contact'
 
-export const ContactForm = () => {
+export const ContactForm = ({
+  title,
+  description,
+}: {
+  title: string
+  description: string
+}) => {
   const [isLoading, setIsLoading] = React.useState(false)
   const [isComplete, setIsComplete] = React.useState(false)
   const [hasError, setHasError] = React.useState(false)
@@ -73,11 +79,8 @@ export const ContactForm = () => {
             onSubmit={handleSubmit}
           >
             <input type="hidden" name="form-name" value={FORM_NAME} />
-            <h2>Get in touch!</h2>
-            <p>
-              Leave me a message if you're interested in classes or want to
-              reach out for another reason
-            </p>
+            <h2>{title}</h2>
+            <p>{description}</p>
             <fieldset>
               <p style={{ display: 'none' }}>
                 <label>
