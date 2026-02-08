@@ -32,10 +32,14 @@ instruments:
     icon: drum
   - title: Ukelele
     icon: sitar
+  - title: Theory
+    icon: music-notes
   - title: Writing
-    icon: music
+    icon: music-writing
   - title: Production
     icon: mixing-table
+  - title: Improv
+    icon: music
 about: |-
   ## About Dave
 

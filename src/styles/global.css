@@ -6,6 +6,13 @@ html {
   height: 100%;
 }
 
+footer {
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 50%;
+  opacity: 50%;
+}
+
 .container {
   padding: 2rem 2rem 1rem;
 }
