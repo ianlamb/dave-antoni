@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Markdown from 'react-markdown'
 
 export const Samples: React.FC<{
   title: string
@@ -10,7 +11,11 @@ export const Samples: React.FC<{
       <div className="grid">
         {items.map(({ description, spotifySrc }) => (
           <div>
-            {description && <p>{description}</p>}
+            {description && (
+              <p>
+                <Markdown>{description}</Markdown>
+              </p>
+            )}
             <iframe
               data-testid="embed-iframe"
               style={{ borderRadius: '12px' }}

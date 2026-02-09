@@ -27,11 +27,11 @@ instruments:
   - title: Piano
     icon: piano
   - title: Bass
-    icon: mandolin
+    icon: bass
   - title: Drums
     icon: drum
   - title: Ukelele
-    icon: sitar
+    icon: ukelele
   - title: Theory
     icon: music-notes
   - title: Writing
@@ -66,11 +66,11 @@ about: |-
 samples:
   title: Music Samples
   items:
-    - description: ""
+    - description: |-
       spotifySrc: https://open.spotify.com/embed/artist/51BvEs1LeuH6swKuAaGZ9W?utm_source=generator
-    - description: ""
+    - description: |-
       spotifySrc: https://open.spotify.com/embed/artist/5qKquO0aTpbwwEaQCvvAQJ?utm_source=generator
       
 contact:
   title: Get in touch!
-  description: Leave me a message if you're interested in classes or want to reach out for another reason
+  description: Leave Dave a message if you want to learn more about lessons
