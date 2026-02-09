@@ -28,6 +28,7 @@
     "gatsby-plugin-mdx": "^5.11.0",
     "gatsby-plugin-netlify-cms": "^7.11.0",
     "gatsby-plugin-postcss": "^6.11.0",
+    "gatsby-plugin-purgecss": "^6.2.1",
     "gatsby-plugin-react-svg": "^3.3.0",
     "gatsby-plugin-recaptcha": "^1.0.5",
     "gatsby-plugin-sharp": "^5.11.0",

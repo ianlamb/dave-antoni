@@ -57,6 +57,9 @@ const config: GatsbyConfig = {
 
     // recaptcha
     'gatsby-plugin-recaptcha',
+
+    // optimization
+    'gatsby-plugin-purgecss'
   ],
 }
 
