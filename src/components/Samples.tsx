@@ -9,7 +9,7 @@ export const Samples: React.FC<{
     <div>
       <h2>{title}</h2>
       <div className="grid">
-        {items.map(({ description, spotifySrc }) => (
+        {items.map(({ description, spotifySrc }, index) => (
           <div>
             {description && (
               <p>
@@ -25,6 +25,7 @@ export const Samples: React.FC<{
               frameBorder="0"
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
               loading="lazy"
+              title={`Music Sample ${index + 1}`}
             ></iframe>
           </div>
         ))}
