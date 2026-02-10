@@ -13,6 +13,16 @@ const config: GatsbyConfig = {
     // netlify
     'gatsby-plugin-netlify-cms',
 
+    // favicon
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Dave Antonini`,
+        start_url: `/`,
+        icon: `static/favicon.png`
+      },
+    },
+
     // css/image/file loading
     'gatsby-plugin-postcss',
     {
@@ -54,15 +64,6 @@ const config: GatsbyConfig = {
         },
       },
     },
-
-    // favicon
-  {
-    resolve: 'gatsby-plugin-favicons',
-    options: {
-      logo: './static/images/avatar.jpg',
-      appName: 'Dave Antonini',
-    }
-  }
 
     // recaptcha
     // 'gatsby-plugin-recaptcha',
