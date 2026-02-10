@@ -55,11 +55,17 @@ const config: GatsbyConfig = {
       },
     },
 
+    // favicon
+  {
+    resolve: 'gatsby-plugin-favicons',
+    options: {
+      logo: './static/favicon.ico',
+      appName: 'Dave Antonini',
+    }
+  }
+
     // recaptcha
     // 'gatsby-plugin-recaptcha',
-
-    // optimization
-    'gatsby-plugin-purgecss'
   ],
 }
 
