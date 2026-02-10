@@ -59,7 +59,7 @@ const config: GatsbyConfig = {
   {
     resolve: 'gatsby-plugin-favicons',
     options: {
-      logo: './static/favicon.ico',
+      logo: './static/images/avatar.jpg',
       appName: 'Dave Antonini',
     }
   }
